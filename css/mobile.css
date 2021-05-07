@@ -1,0 +1,296 @@
+@media (max-width: 500px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        max-width: 100vh;
+    }
+    body{
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr;
+        grid-template-columns: 12fr;
+        grid-template-areas:
+        "nav "
+        "section1"
+        "section2"
+        "section3"
+        "section4"
+        "section5"
+        "footer"
+        ;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .navbar{
+        grid-area: nav;
+        width: 100vh;
+    }
+    #home{
+        grid-area: section1;
+        width: 100vh;
+    }
+    #about{
+        grid-area: section2;
+    }
+    #mySkills{
+        grid-area: section3;
+    }
+    #work{
+        grid-area: section4;
+    }
+    #contact{
+        grid-area: section5;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
+
+@media (max-width: 500px) {
+    /* navbar styling */
+    .navbar .logo a{
+        font-size: 12px;
+        margin-left: 0px;
+        display: block;
+    }
+    .navbar .menu li a{
+        font-size: 10px;
+    }
+
+    /* home styling */
+    #home{
+        display: block;
+    }
+    .home .home-right{
+        padding: 80px 0px 0px 25px;
+    }
+    .home .container .home-right .text-1{
+        font-size: 0.8em;
+    }
+
+    .home .container .home-right .text-2{
+        font-size: 1.0em;
+        margin: 0;
+        margin-top: 2px;
+    }
+    .home .container .home-right .text-3{
+        font-size: 0.8em;
+        margin-top: 2px;
+    }
+
+    .home .container .home-right a{
+        font-size: 0.6em;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        align-items: center;
+        padding: 5px;
+        margin-top: 2px;
+    }
+    .home .container .home-left{
+        background-image: none;
+    }
+    .home .container .home-left .responsivePic{
+        background: url(../images/newcut.png) no-repeat center;
+        width: 250px;
+        height: 200px;
+        padding: 450px 200px 50px 100px;
+    }
+
+    /* about styling */
+
+    .about .title{
+        font-size: 1.4em;
+    }
+    .about .p-title{
+        font-size: 1.2em;
+    }
+    .about .container .primaPoza img{
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        padding-top: 0px;
+        margin-left: 25px;
+    }
+    .about .container .right{
+        margin-left: 40px;
+        margin-top: 00;
+        
+    }
+    .about .container .right .text{
+        font-size: 0.6em;
+        font-weight: 900;
+    }
+    .about .container .right p{
+        font-size: 0.6em;
+    }
+    .about .container .right a{
+        font-size: 0.6em;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+
+    /* skills styling */
+    
+    .skills .container-skills .title{
+        font-size: 1.2em;
+        padding: 50px;
+    }
+    .skills .container-skills .skills-content .column-left .text-exp{
+        font-size: 12px;
+    }
+    .skills .container-skills .skills-content .column-left p{
+        font-size: 10px;
+        padding: 20px 0px 0px 0px;
+        margin-left: 10px;
+    }
+
+    
+    /* work styling */
+    .work .container .title{
+        font-size: 1.4em;
+        padding: 80px;
+    }
+    .work .container .work-details .webDesign{
+        display: block;
+        width: 100vh;
+    }
+    .work .container .work-details .webApps{
+        display: block;
+        width: 100vh;
+    }
+    .work .container .work-details .webDesign p{
+
+        font-size: 1.0em;
+    }
+    .work .container .work-details .webApps p{
+
+        font-size: 1.0em;
+    }
+    .work .container .work-details .webDesign .hotel-image{
+        display: block;
+    }
+    .work .container .work-details .webDesign .web-apps{
+        display: block;
+    }
+
+    .work-details .hotel-image{
+        background: url(../images/web-design.jpg) no-repeat center center/cover;
+        width: 190px;
+        height: 160px;
+        margin-left: 20px;;
+    }
+
+    .work-details .web-apps{
+        background: url(..//images/imdb.png) no-repeat center center/cover;
+        width: 190px;
+        height: 160px;
+        margin-left: 20px;
+        margin-bottom: 180px;
+    }
+
+
+    /* contact styling */
+
+    #contact{
+        width: 100vh;
+        height: 680px;
+    }
+
+    .contact .contact-content .contact-title{
+        padding: 30px;
+        font-size: 1.4em;
+    }
+
+    .contact .contact-content .p-contact{
+        font-size: 1.0em;
+        padding: 0px 0px 0px 0px;
+    }
+    .contact > .contact-content > h2{
+        padding: 0px 0px 0px 0px;
+    }
+    .contact .contact-content .container .left-side .text h3{
+        padding: 0px 0px 0px 0px;
+        font-size: 0.9em;
+    }
+    .contact .contact-content .container .left-side .text p{
+        padding: 0px 0px 0px 0px;
+        font-size: 0.7em;
+    }
+
+    .container > .left-side > .box > .icon{
+        display: none;
+    }
+    .contact .contact-content .container .left-side{
+        padding: 0px 0px 0px 0px;
+        margin-top: -200px;
+        margin-left: 0px;
+    }
+    .contact .contact-content .container .right-side{
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .contact .contact-content .container .right-side .inputBox span{
+        font-size: 0.8em;
+        margin-top: 0px;
+        padding: 0;
+    }
+    .container .left-side{
+        width: 50%;
+
+    }
+    .container .right-side{
+        width: 50%;
+
+    }
+    .right-side .inputBox input[type="submit"]{
+        margin-top: -20px;
+        font-size: 0.9em;
+        width: 80px;
+        height: 30px;
+        padding-top: 5px;
+        border-radius: 7px;
+        text-align: center;
+    }
+
+
+
+    /* footer styling */
+
+    footer .social-icons i{
+        font-size: 1.0em;
+        padding: 0px 0px 0px 0px;
+    }
+
+    footer .copyright{
+        font-size: 0.8em;
+    }
+    .nav-social-icons{
+        position: fixed;
+        top: 35%;
+        right: -80px;
+        transform: translateX(-50%);
+    }
+    .nav-social-icons i{
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-social-icons a{
+        width: 30px;
+        height: 30px;
+        margin-right: 83px;
+    }
+
+}
+
